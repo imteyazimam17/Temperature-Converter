@@ -1,0 +1,128 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://c1.wallpaperflare.com/preview/854/175/681/california-storm-weather-thunderstorm.jpg");
+    background-size: cover;
+    /* background:linear-gradient(90deg, #5936b4, 0%, #362a84); */
+    color: #222;
+    font-size: 1rem;
+}
+.temperature-converter{
+    color: white;
+    /* background-color: #fff; */
+    /* background-image: url(2.jpg); */
+    /* background-size: cover; */
+    width: 100%;
+    min-width: 320px;
+    padding: 20px 25px 45px;
+    border-radius: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    box-shadow: -5px -5px 250px 0 rgb(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(21px);  
+} 
+.mobile{
+    /* color: white; */
+    display: flex;
+    justify-content:space-between;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.title{
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+
+}
+.result{
+    text-align:center;
+    color: white;
+    margin: 20px 0;
+}
+ 
+.result-heading{
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+.celsius-value{
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+    color: white;
+
+}
+
+.degree-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.degree-feild{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+label{
+    color: #555;
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+input, select{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+input:focus{
+    border: 1px solid #4c49f3;
+}
+
+option{
+    /* font-weight: bold; */
+    background: #3a202b;
+    color: #f6f6f6;
+}
+#converter-btn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #3633f3, #120fb9);
+    color: #f6f6f6;
+    padding: 12px 88px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#converter-btn:hover{
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+}
+
+.fa{
+    margin-left: -12px;
+    margin-right: 8px;
+}
